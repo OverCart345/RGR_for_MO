@@ -34,7 +34,7 @@ def machine_learning():
             X_train_scaled = np.column_stack((X_train_scaled_numeric, X_train_binary))
             X_test_scaled = np.column_stack((X_test_scaled_numeric, X_test_binary))
             parameters = {
-                'metric': ['euclidean']
+                'metric': ['euclidean'],
                 'shrink_threshold': [0.5]
             }
             model = NearestCentroid()
