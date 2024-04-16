@@ -9,6 +9,7 @@ import numpy as np;
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestCentroid
 from sklearn.linear_model import ElasticNet
+from sklearn.model_selection import GridSearchCV
 
 def load_models():
     model_classification = pickle.load(open('bestmodels/model_classification.pkl', 'rb'))
